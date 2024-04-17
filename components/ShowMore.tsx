@@ -1,11 +1,10 @@
 "use client";
 
-import { ShowMoreProps } from "@/types";
-
-import { updateSearchParams } from "@/utils";
 import { useRouter } from "next/navigation";
-import { CustomButton } from ".";
 
+import { ShowMoreProps } from "@types";
+import { updateSearchParams } from "@utils";
+import { CustomButton } from "@components";
 
 const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   const router = useRouter();
